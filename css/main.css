@@ -736,19 +736,16 @@ header .container nav ul>li>a:hover {
     margin-bottom: 30px;
 }
 
-.pricing .container .plans .plan ul {
-    list-style: none;
-}
 .pricing .container .plans .plan ul li {
     padding: 15px;
     display: block;
     color: var(--main-p-color);
-    position: relative;
 }
 
 .pricing .container .plans .plan .foot {
     padding-top: 35px;
     padding-bottom: 35px;
+    position: relative;
 }
 .pricing .container .plans .plan .foot::before {
     position: absolute;
