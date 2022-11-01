@@ -18,6 +18,7 @@ html {
     --section-background: #ececec;
     --main-h3-color: #2c4755;
     --main-p-color: #575757;
+    --main-card-backGround: #f9f9f9;
 }
 
 .special-heading {
@@ -403,7 +404,7 @@ header .container nav ul>li>a:hover {
     border-radius: 15px;
     flex-basis: 30%;
     padding: 50px 30px 30px;
-    background-color: #fcfcfc;
+    background-color: var(--main-card-backGround);
     transition: var(--main-transition);
 }
 
@@ -572,7 +573,7 @@ header .container nav ul>li>a:hover {
         border-radius: 15px;
         width: 75%;
         padding: 50px 30px 30px;
-        background-color: #fcfcfc;
+        background-color: var(--main-card-backGround);
         transition: var(--main-transition);
     }
     
@@ -624,7 +625,7 @@ header .container nav ul>li>a:hover {
 
 .portfolio .container .project {
     display: block;
-    background-color: #fcfcfc;
+    background-color: var(--main-card-backGround);
     padding: 0 10px 10px;
     border-radius: 15px;
     flex-basis: 30%;
@@ -689,7 +690,7 @@ header .container nav ul>li>a:hover {
     margin-right: auto;
     margin-left: auto;
     width: 30%;
-    background-color: #fcfcfc;
+    background-color: var(--main-card-backGround);
     border-radius: 15px;
     text-align: center;
     border-top: 1px solid var(--main-color);
