@@ -505,16 +505,8 @@ header .container nav ul>li>a:hover {
 /* start services */
 
 .services {
-    /* animation: change-back-ground 5s infinite linear; */
     margin: 100px auto;
 }
-/* @keyframes change-back-ground {
-    0% { background-color: white;    }
-    25% { background-color: #fcfcfc;}
-    50% { background-color: white;}
-    75% { background-color: #fcfcfc;}
-    100% { background-color: white;}
-} */
 
 .services .container {
     padding-top: 60px;
@@ -702,6 +694,18 @@ header .container nav ul>li>a:hover {
 .pricing .container .plans .plan .head,
 .pricing .container .plans .plan ul {
     padding: 30px 0;
+    position: relative;
+}
+
+.pricing .container .plans .plan .head::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #eaeaea;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
 }
 
 .pricing .container .plans .plan .head span {
@@ -733,8 +737,6 @@ header .container nav ul>li>a:hover {
 }
 
 .pricing .container .plans .plan ul {
-    border-top: 1px solid var(--main-color);
-    border-bottom: 1px solid var(--main-color);
     list-style: none;
 }
 .pricing .container .plans .plan ul li {
@@ -743,17 +745,21 @@ header .container nav ul>li>a:hover {
     color: var(--main-p-color);
     position: relative;
 }
-/* .pricing .container .plans .plan ul li:not(:last-child)::after {
-    content: "";
+
+.pricing .container .plans .plan .foot {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.pricing .container .plans .plan .foot::before {
     position: absolute;
-    width: 100px;
-    height: 1px;
-    background-color: var(--main-color);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-} */
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #eaeaea;
+    top: 0;
+    left: 0;
+}
 
 .pricing .container .plans .plan .foot a {
     display: block;
@@ -761,7 +767,7 @@ header .container nav ul>li>a:hover {
     border: 1px solid var(--main-color);
     border-radius: 8px;
     width: fit-content;
-    margin: 35px auto;
+    margin: auto;
     transition: var(--main-transition);
 }
 .pricing .container .plans .plan .foot a:hover {
@@ -780,12 +786,6 @@ header .container nav ul>li>a:hover {
     }
 }
 
-.pricing .container .plans .plan:hover ul {
-    animation: gradiantBC 2s infinite;
-}
-.pricing .container .plans .plan:hover li {
-    animation: gradiantBC 2s infinite;
-}
 .pricing .container .plans .plan:hover a{
     animation: gradiantBC 2s infinite;
 }
@@ -894,12 +894,6 @@ header .container nav ul>li>a:hover {
     animation: gradiantBCC 2s infinite;
     transform: scale(1.2);
 }
-/* .contact .container ul li a.bolderW i{
-    font-weight: bold;
-}
-.contact .container ul li a.bolderI i{
-    font-weight: bold;
-} */
 
 /* responsive */
 @media (max-width: 600px) {
@@ -920,8 +914,7 @@ header .container nav ul>li>a:hover {
 /* start footer  */
 
 .footer {
-    /* background-color: var(--section-background); */
-    background-color: #fcfcfc;
+    background-color: var(--main-card-backGround);
     margin: 0;
 }
 .footer .container {
