@@ -112,11 +112,6 @@ header .container .logo span {
     color: var(--main-color);
 }
 
-header .container nav {
-    display: flex;
-    justify-content: space-between;
-}
-
 header .container nav ul {
     display: flex;
 }
